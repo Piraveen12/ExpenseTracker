@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styletr.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body bgcolor="white">
+    <span><h1>TRANSACTION TRACKER</h1></span>
+     
+    
+    <main>
+        <h3>
+            <div>
+                <h5>TOTAL BALANCE</h5>
+                <span id = 'balance'><i class="fa-solid fa-indian-rupee-sign">0.00</i></span>
+            </div>
+            <div>
+                <h5>EARNED</h5>
+                <span id='earned'><i class="fa-solid fa-indian-rupee-sign">0.00</i></span>
+            </div>
+            <div>
+                <h5>EXPENDED</h5>
+                <span id='expended'><i class="fa-solid fa-indian-rupee-sign">0.00</i></span>
+            </div>
+        </h3>
+        <section>
+            <header>Add Transaction</header>
+            <form id="transactionForm">
+                <div>
+                    <label for="type">
+                        <input type="checkbox" name='type' id='type' />
+                        <div class="options">
+                            <span>EXPENSE</span>
+                            <span>EARNED</span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <label for="name">Title</label>
+                    <input type ="text" name="name" required />
+                </div>
+                <div>
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" value="0" min="0.00" step="0.01" required />
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" required />
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+        <section>
+            <header>TRANSACTIONS</header>
+            <ul id="list"></ul>
+            <div id="status"></div>
+        </section>
+    </main>
+
+
+    <script src = "js/scripttr.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Deposits</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+   .thumb {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       
+   }
+
+   .thumb img {
+       width: 50px;
+       height: 50px;
+   }
+</style>
+<script>
+   function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+   }
+</script>
+
+
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">Educa.</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Mr.John</h3>
+         <p class="role">customer</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">John Walt</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+<section class="playlist-videos">
+
+   <h1 class="heading">Deposits</h1>
+
+   <div class="box-container">
+
+      <a class="box"  href="javascript:void(0);"  onclick="scrollToSection('saccount')">
+         <img src="sack-dollar-solid.svg" style="width: 100px; height: 100px;" alt="">
+         <h3>Deposits</h3>
+         <h3>Offers diverse deposit schemes for optimal returns: fixed deposits, re-investment schemes, and cash certificates.</h3>
+         <button type="button" class="read-below-button">Read Below</button>
+      </a>     
+      <a class="box" href="javascript:void(0);"  onclick="scrollToSection('caccount')">
+         <img src="business-time-solid.svg" style="width: 100px; height: 100px;" alt="">
+         <h3>Recurring deposits</h3>
+         <h3>Opt for Recurring Deposit schemes to invest fixed monthly sums, yielding lump sum maturity amounts, ensuring steady growth.</h3>
+         <button type="button" class="read-below-button">Read Below</button>
+      </a>
+      <a class="box" href="javascript:void(0);"  onclick="scrollToSection('raccount')">
+         <img src="database-solid.svg" style="width: 100px; height: 100px;" alt="">
+         <h3>Tax Saving Deposits</h3>
+         <h3>Tax Saving scheme deposits offer up to Rs. 1.50 Lakh deduction under Income Tax Act's Section 80C, promoting savings with tax benefits.</h3>
+         <button type="button" class="read-below-button">Read Below</button>
+      </a>
+   </div>
+</section>
+<section class="saccount" id="saccount" style="background-color: white; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+   <div class="column">
+       <div class="thumb">
+           <h1 style="font-size: 24px;">Deposits</h1>
+       </div><br>
+       <div>
+           <h1 style="font-size: 20px;">Special Deposit Scheme</h1>
+           <h2 style="color: light; font-size: 18px;">Product: 333 Special Deposit Scheme
+            Period: 333 Days
+            Min-Max Deposit: Rs. 1000 - Rs. 1,99,99,999
+            Eligibility: Individuals, minors, entities per RBI; Interest: 7.10% - 7.50%; Options: Interest pay-out, cumulative.</h2>
+           <h2 style="font-size: 18px;">To Register click here</h2>
+           <br>
+           <div>
+             <h1 style="font-size: 20px;">Double Delight</h1>
+             <h2 style="color: light; font-size: 18px;">Double the prosperity with Double Delight. Exclusive odd-sum deposit offering rounded maturity amounts and Free Hospital insurance coverage. Accrued interest payable after agreed term.</h2>
+             <h2 style="font-size: 18px;">To Register click here</h2>
+         </div>
+       </div>
+       <br>
+       <hr>
+       <br>
+   </div>
+</section>
+<section class="caccount"  id="caccount" style="background-color: white; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+   <div class="column">
+       <div class="thumb">
+           <h1 style="font-size: 24px;">Recurring deposits</h1>
+       </div><br>
+       <div>
+           <h1 style="font-size: 20px;">Manimala</h1>
+           <h2 style="color: light; font-size: 18px;">Manimala is a monthly deposit scheme for consistent savers, offering lump sum maturity amount to individuals with regular incomes.</h2>
+           <h2 style="font-size: 18px;">To Register click here</h2>
+       </div>
+       <br>
+       <div>
+         <h1 style="font-size: 20px;">Money Mala Plus</h1>
+         <h2 style="color: light; font-size: 18px;">A flexible Recurring Deposit Account is offered with an option to remit excess funds beyond the committed core amount.</h2>
+         <h2 style="font-size: 18px;">To Register click here</h2>
+     </div>
+       <br>
+       <hr>
+       <br>
+   </div>
+</section>
+<section class="raccount"  id="raccount" style="background-color: white; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+   <div class="column">
+       <div class="thumb">
+           <h1 style="font-size: 24px;">Tax Saving Deposits</h1>
+       </div><br>
+       <div>
+           <h2 style="color: light; font-size: 18px;">Deposits will be accepted both under cumulative and non-cumulative options.
+            Deposits will be accepted in the name of Individual/s and also in the name of Kartha of HUF.
+            The scheme is for a fixed period of 5 years.
+            Nomination facility is available.</h2>
+           <h2 style="font-size: 18px;">To Register click here</h2>
+       </div>
+       <br>
+   </div>
+</section>
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>ms. web wizards</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

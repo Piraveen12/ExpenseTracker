@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Accounts</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+   .thumb {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       
+   }
+
+   .thumb img {
+       width: 50px;
+       height: 50px;
+   }
+</style>
+<script>
+   function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+   }
+</script>
+
+
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">Educa.</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">John Walt</h3>
+         <p class="role">student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">John Walt</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+<section class="playlist-videos">
+
+   <h1 class="heading">Accounts</h1>
+
+   <div class="box-container">
+
+      <a class="box"  href="javascript:void(0);"  onclick="scrollToSection('saccount')">
+         <img src="sack-dollar-solid.svg" style="width: 100px; height: 100px;" alt="">
+         <h3>Savings Accounts</h3>
+         <h3>High interest, no fees, ATM access, online/mobile banking, debit card, direct deposits, automatic transfers, customer support, joint accounts.</h3>
+         <button type="button" class="read-below-button">Read Below</button>
+      </a>     
+      <a class="box" href="javascript:void(0);"  onclick="scrollToSection('caccount')">
+         <img src="business-time-solid.svg" style="width: 100px; height: 100px;" alt="">
+         <h3>Current Accounts</h3>
+         <h3>Discover business Current Accounts for commercial facilities, offering tailored options to cater to varied professional needs.</h3>
+         <button type="button" class="read-below-button">Read Below</button>
+      </a>
+      <a class="box" href="javascript:void(0);"  onclick="scrollToSection('raccount')">
+         <img src="database-solid.svg" style="width: 100px; height: 100px;" alt="">
+         <h3>Reward Points</h3>
+         <h3>Introducing Anmol Rewardz: Earn points on the go! Shop, dine, pay bills to redeem for FREE goodies & services. Register today!</h3>
+         <button type="button" class="read-below-button">Read Below</button>
+      </a>
+   </div>
+</section>
+<section class="saccount" id="saccount" style="background-color: white; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+   <div class="column">
+       <div class="thumb">
+           <h1 style="font-size: 24px;">Savings Accounts</h1>
+       </div><br>
+       <div>
+           <h1 style="font-size: 20px;">Student Savings</h1>
+           <h2 style="color: light; font-size: 18px;">As a student, you now have an opportunity to open your own savings account with us and plan for a better future.
+               The account opening process is simple. All you need to do is ask an existing account holder or the head of
+               the educational institution where you are studying to introduce you to the bank.</h2>
+           <h2 style="font-size: 18px;">To Register click here</h2>
+           <br>
+           <div>
+             <h1 style="font-size: 20px;">Salary Accounts</h1>
+             <h2 style="color: light; font-size: 18px;">Salary accounts are specifically designed to meet the needs of corporate employees, providing the facility to maintain a zero balance and enjoy many more benefits.</h2>
+             <h2 style="font-size: 18px;">To Register click here</h2>
+         </div>
+       </div>
+       <br>
+       <hr>
+       <br>
+   </div>
+</section>
+<section class="caccount"  id="caccount" style="background-color: white; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+   <div class="column">
+       <div class="thumb">
+           <h1 style="font-size: 24px;">Current Accounts</h1>
+       </div><br>
+       <div>
+           <h1 style="font-size: 20px;">Multi-City Current Account</h1>
+           <h2 style="color: light; font-size: 18px;">If your business extends across several cities of the country, a Multi-City Account is just the right Current account for you. At affordable balances, it offers you the benefit of availing various concessions based on the Monthly Average Balance maintained by you in the account.</h2>
+           <h2 style="font-size: 18px;">To Register click here</h2>
+       </div>
+       <br>
+       <div>
+         <h1 style="font-size: 20px;">Salary Accounts</h1>
+         <h2 style="color: light; font-size: 18px;">Salary accounts are specifically designed to meet the needs of corporate employees, providing the facility to maintain a zero balance and enjoy many more benefits.</h2>
+         <h2 style="font-size: 18px;">To Register click here</h2>
+     </div>
+       <br>
+       <hr>
+       <br>
+   </div>
+</section>
+<section class="raccount"  id="raccount" style="background-color: white; padding: 20px; border: 1px solid #ccc; margin-bottom: 20px;">
+   <div class="column">
+       <div class="thumb">
+           <h1 style="font-size: 24px;">Reward Points</h1>
+       </div><br>
+       <div>
+           <h2 style="color: light; font-size: 18px;">Introducing Anmol Rewardz, a Debit Card Loyalty program where you can earn points on the go! Earn points while shopping, dining, or even while paying your utility bills!
+            There's more! The accumulated Anmol Points can get you FREE goodies and services by simply redeeming your Anmol Points.
+            Register your Anmol Rewardz account today to enjoy the benefits and services.</h2>
+           <h2 style="font-size: 18px;">To Register click here</h2>
+       </div>
+       <br>
+   </div>
+</section>
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>ms. web wizards</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
